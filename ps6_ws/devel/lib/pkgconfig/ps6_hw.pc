@@ -1,0 +1,8 @@
+prefix=/home/jkw64/ps6_ws/devel
+
+Name: ps6_hw
+Description: Description of ps6_hw
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/jkw64/ps6_ws/devel/lib 
+Requires: 

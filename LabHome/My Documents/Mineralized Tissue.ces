@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>3</Version>
+  <Name />
+  <Author>CSE User</Author>
+  <Company>Case Western Reserve University</Company>
+  <Notes />
+  <Template />
+  <PassNA>false</PassNA>
+  <FailEstimatedRecords>false</FailEstimatedRecords>
+  <ResultType>0</ResultType>
+  <ResultStage>-1</ResultStage>
+  <RankByType>0</RankByType>
+  <RankByStage>-1</RankByStage>
+  <RankByProperty />
+  <IndexRankColumn>0</IndexRankColumn>
+  <RankOrder>1</RankOrder>
+  <Database>
+    <Path>C:\Program Files (x86)\CES EduPack 2015\Database\Elements\data.gdb</Path>
+    <Name>The Elements</Name>
+    <Unit>SI (Consistent)</Unit>
+    <UnitType>Relative</UnitType>
+    <Currency>USD</Currency>
+    <SelectionTable>Elements</SelectionTable>
+    <Tables>
+      <Table>
+        <TableName>Reference</TableName>
+        <SubsetName>All references</SubsetName>
+        <LayoutName>All references</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Elements</TableName>
+        <SubsetName>Elements</SubsetName>
+        <LayoutName>Elements</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+    </Tables>
+    <ParameterValues>
+      <ParameterValue>
+        <Name>Temperature</Name>
+        <Value>23</Value>
+      </ParameterValue>
+    </ParameterValues>
+  </Database>
+  <Stages>
+    <Stage xsi:type="BubbleStageMemento">
+      <Name />
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,823,903</Windowplacement>
+      <ZOrder>1</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name>Melting temperature (°C)</Name>
+        <FunctionObjective />
+        <Expression>[Melting temperature]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>28.399993896484375</Low>
+        <High>3546.8500061035156</High>
+      </xAxis>
+      <yAxis>
+        <Name>Thermal expansion coefficient at 300K (strain/°C)</Name>
+        <FunctionObjective />
+        <Expression>[Thermal expansion coefficient at 300K]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>1.1900000542159977E-06</Low>
+        <High>0.0018999999952029611</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Melting Temp vs. Thermal Expansion Coefficient</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>329.65809958950069</XPos>
+          <YPos>0.0020788568600432844</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>318.3763674576665</XPos>
+          <YPos>0.0015006672586581624</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+      <ShowEnvelopes>false</ShowEnvelopes>
+      <GuideLineHidden>true</GuideLineHidden>
+      <GuideLineSlope>1</GuideLineSlope>
+    </Stage>
+  </Stages>
+</Project>

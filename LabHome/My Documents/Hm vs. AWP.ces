@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>3</Version>
+  <Name />
+  <Author>CSE User</Author>
+  <Company>Case Western Reserve University</Company>
+  <Notes />
+  <Template>MaterialUniverse\Edu Level 2 with Eco  properties.cet</Template>
+  <PassNA>false</PassNA>
+  <FailEstimatedRecords>false</FailEstimatedRecords>
+  <ResultType>0</ResultType>
+  <ResultStage>-1</ResultStage>
+  <RankByType>0</RankByType>
+  <RankByStage>-1</RankByStage>
+  <RankByProperty />
+  <IndexRankColumn>0</IndexRankColumn>
+  <RankOrder>1</RankOrder>
+  <Database>
+    <Path>C:\Program Files (x86)\CES EduPack 2015\Database\L2_English\data.gdb</Path>
+    <Name>Level 2</Name>
+    <Unit>SI (Consistent)</Unit>
+    <UnitType>Relative</UnitType>
+    <Currency>USD</Currency>
+    <SelectionTable>MaterialUniverse</SelectionTable>
+    <Tables>
+      <Table>
+        <TableName>MaterialUniverse</TableName>
+        <SubsetName>Edu Level 2 with Eco  properties</SubsetName>
+        <LayoutName>Edu Level 2 with Eco  properties</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Reference</TableName>
+        <SubsetName>Materials References</SubsetName>
+        <LayoutName>All Details</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>ProcessUniverse</TableName>
+        <SubsetName>Edu Level 2 All Processes</SubsetName>
+        <LayoutName>Edu Level 2 All Processes</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Producers</TableName>
+        <SubsetName>Producers</SubsetName>
+        <LayoutName>Producers</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+    </Tables>
+    <ParameterValues>
+      <ParameterValue>
+        <Name>Material Cost</Name>
+        <Value>10</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Component Mass</Name>
+        <Value>1</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Batch Size</Name>
+        <Value>1000</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Overhead Rate</Name>
+        <Value>110</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Capital Write-off Time</Name>
+        <Value>5</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Load Factor</Name>
+        <Value>0.5</Value>
+      </ParameterValue>
+    </ParameterValues>
+  </Database>
+  <Stages>
+    <Stage xsi:type="BubbleStageMemento">
+      <Name />
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,1666,916</Windowplacement>
+      <ZOrder>1</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name>Annual world production (kg/s)</Name>
+        <FunctionObjective />
+        <Expression>[Annual world production]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>2350</Low>
+        <High>15500000256</High>
+      </xAxis>
+      <yAxis>
+        <Name>Embodied energy, primary production (J/kg)</Name>
+        <FunctionObjective />
+        <Expression>[Embodied energy, primary production]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>1000000</Low>
+        <High>265000000000</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>1.3e16 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>13023.344338629748</XPos>
+          <YPos>333784700.314062</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-13171</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>1.6e16 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>61309.44928328738</XPos>
+          <YPos>129271903.27834904</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-4576</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>5.4e17 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>4907463.0971070342</XPos>
+          <YPos>1003776290.1684279</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-7256</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>5.3e17 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>18462150.150026552</XPos>
+          <YPos>11087052.108194063</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-4099</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>5.1e17 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>11790248.752004001</XPos>
+          <YPos>263315154.8863532</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6120</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>1.9e19 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>2176772935.2030334</XPos>
+          <YPos>691503858.36579692</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU08-6144</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>1.7e19 J/s</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>9067798166.8756657</XPos>
+          <YPos>6232985.7086209273</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-176</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Softwood: pine, along grain</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>1294402617.5926554</XPos>
+          <YPos>1185119.4773583736</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6134</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Medium carbon steel</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>7703361476.6146708</XPos>
+          <YPos>40170548.202079818</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-2412</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text />
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>51158414.429864161</XPos>
+          <YPos>3504097.4340834855</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-125</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text />
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>12156316.867195638</XPos>
+          <YPos>5630634.21568132</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-3540</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Non age-hardening wrought Al-alloys</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>26108270.864558313</XPos>
+          <YPos>2967911666.2677283</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6110</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Paper and cardboard</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>152242640.81346384</XPos>
+          <YPos>395394951.1492539</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU08-6144</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Polyamides (Nylons, PA)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>693422.983279373</XPos>
+          <YPos>5843993773.3454266</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-7260</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Polyethylene (PE)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>292295802.53065157</XPos>
+          <YPos>25426295.287358664</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-9775</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Silicon</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>1583187.7387255305</XPos>
+          <YPos>17516234.909480058</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-349</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Soda-lime glass</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>228870715.58791497</XPos>
+          <YPos>3686766.0668484117</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-110</RecordGruid>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Hm vs. AWP</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>3198529.9946316988</XPos>
+          <YPos>307697218331.79681</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+      <ShowEnvelopes>false</ShowEnvelopes>
+      <GuideLineHidden>false</GuideLineHidden>
+      <GuideLineSlope>-1</GuideLineSlope>
+    </Stage>
+  </Stages>
+</Project>

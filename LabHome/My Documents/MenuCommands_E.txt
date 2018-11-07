@@ -1,0 +1,13 @@
+[Ver]
+29
+[WksPlotMenuMRUList]
+Version = 1
+1 = 33248|Scatter
+2 = 33250|Line + Symbol
+
+[Menu_granalys]
+1 = FitLinear|0||&Linear Fit:linear regression on XY data|-1|<Last used>|1|1
+2 = FitLinear|0||&Linear Fit:linear regression on XY data|14|<Last used>...|1|1
+3 = FitLinear|0||&Linear Fit:linear regression on XY data|14||1|1
+4 = FitNL|0||&Nonlinear Curve Fit:Perform nonlinear curve fitting|14|<Last used>...|1|1
+5 = FitNL|0||&Nonlinear Curve Fit:Perform nonlinear curve fitting|14||1|1

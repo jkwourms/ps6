@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ps6_hw</name>
+  <version>0.1.0</version>
+  <description>An example of an ARIAC competitor's package.</description>
+  <maintainer email="jkw64@case.edu">Jennifer Wourms</maintainer>
+
+  <license>CLOSED</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>osrf_gear</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+
+</package>
+

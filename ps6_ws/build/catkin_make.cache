@@ -1,0 +1,2 @@
+ps6_hw
+-DCATKIN_DEVEL_PREFIX=/home/jkw64/ps6_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jkw64/ps6_ws/install -G Unix Makefiles

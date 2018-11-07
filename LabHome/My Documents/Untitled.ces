@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>3</Version>
+  <Name />
+  <Author>CSE User</Author>
+  <Company>Case Western Reserve University</Company>
+  <Notes />
+  <Template />
+  <PassNA>false</PassNA>
+  <FailEstimatedRecords>false</FailEstimatedRecords>
+  <ResultType>0</ResultType>
+  <ResultStage>-1</ResultStage>
+  <RankByType>0</RankByType>
+  <RankByStage>-1</RankByStage>
+  <RankByProperty />
+  <IndexRankColumn>0</IndexRankColumn>
+  <RankOrder>1</RankOrder>
+  <Database>
+    <Path>C:\Program Files (x86)\CES EduPack 2015\Database\L2_English\data.gdb</Path>
+    <Name>Level 2</Name>
+    <Unit>SI (Consistent)</Unit>
+    <UnitType>Relative</UnitType>
+    <Currency>USD</Currency>
+    <SelectionTable>MaterialUniverse</SelectionTable>
+    <Tables>
+      <Table>
+        <TableName>MaterialUniverse</TableName>
+        <SubsetName>Edu Level 2</SubsetName>
+        <LayoutName>Edu Level 2</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Reference</TableName>
+        <SubsetName>Materials References</SubsetName>
+        <LayoutName>All Details</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>ProcessUniverse</TableName>
+        <SubsetName>Edu Level 2 All Processes</SubsetName>
+        <LayoutName>Edu Level 2 All Processes</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Producers</TableName>
+        <SubsetName>Producers</SubsetName>
+        <LayoutName>Producers</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+    </Tables>
+    <ParameterValues>
+      <ParameterValue>
+        <Name>Material Cost</Name>
+        <Value>10</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Component Mass</Name>
+        <Value>1</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Batch Size</Name>
+        <Value>1000</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Overhead Rate</Name>
+        <Value>110</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Capital Write-off Time</Name>
+        <Value>5</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Load Factor</Name>
+        <Value>0.5</Value>
+      </ParameterValue>
+    </ParameterValues>
+  </Database>
+  <Stages>
+    <Stage xsi:type="BubbleStageMemento">
+      <Name />
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,347,573</Windowplacement>
+      <ZOrder>1</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name>Melting point (°C)</Name>
+        <FunctionObjective />
+        <Expression>[Melting point]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>74.800018310546875</Low>
+        <High>3409.9999084472656</High>
+      </xAxis>
+      <yAxis>
+        <Name>Thermal expansion coefficient (strain/°C)</Name>
+        <FunctionObjective />
+        <Expression>[Thermal expansion coefficient]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>1.9999999949504854E-06</Low>
+        <High>0.00030599999922742427</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Melting Point vs. Thermal Expansion Coefficient (Level 1)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>500.77282816718673</XPos>
+          <YPos>0.0003253637114293531</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+      <ShowEnvelopes>false</ShowEnvelopes>
+      <GuideLineHidden>true</GuideLineHidden>
+      <GuideLineSlope>1</GuideLineSlope>
+    </Stage>
+    <Stage xsi:type="BubbleStageMemento">
+      <Name />
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,823,903</Windowplacement>
+      <ZOrder>2</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name>Melting point (°C)</Name>
+        <FunctionObjective />
+        <Expression>[Melting point]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>74.800018310546875</Low>
+        <High>3409.9999084472656</High>
+      </xAxis>
+      <yAxis>
+        <Name>Thermal expansion coefficient (strain/°C)</Name>
+        <FunctionObjective />
+        <Expression>[Thermal expansion coefficient]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>1.9999999949504854E-06</Low>
+        <High>0.00030599999922742427</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Melting Point vs. Thermal Expansion Coefficient (Level 2)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>498.04449650130056</XPos>
+          <YPos>0.00032311148405932746</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+      <ShowEnvelopes>false</ShowEnvelopes>
+      <GuideLineHidden>true</GuideLineHidden>
+      <GuideLineSlope>1</GuideLineSlope>
+    </Stage>
+  </Stages>
+</Project>

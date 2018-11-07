@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>3</Version>
+  <Name />
+  <Author>CSE User</Author>
+  <Company>Case Western Reserve University</Company>
+  <Notes />
+  <Template>MaterialUniverse\Edu Level 2.cet</Template>
+  <PassNA>false</PassNA>
+  <FailEstimatedRecords>false</FailEstimatedRecords>
+  <ResultType>0</ResultType>
+  <ResultStage>-1</ResultStage>
+  <RankByType>0</RankByType>
+  <RankByStage>-1</RankByStage>
+  <RankByProperty />
+  <IndexRankColumn>0</IndexRankColumn>
+  <RankOrder>1</RankOrder>
+  <Database>
+    <Path>C:\Program Files (x86)\CES EduPack 2015\Database\L2_BioEngineering\data.gdb</Path>
+    <Name>Level 2 Bio Engineering</Name>
+    <Unit>SI (Consistent)</Unit>
+    <UnitType>Relative</UnitType>
+    <Currency>USD</Currency>
+    <SelectionTable>MaterialUniverse</SelectionTable>
+    <Tables>
+      <Table>
+        <TableName>Reference</TableName>
+        <SubsetName>Materials References</SubsetName>
+        <LayoutName>All Details</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>MaterialUniverse</TableName>
+        <SubsetName>Edu Level 2</SubsetName>
+        <LayoutName>Edu Level 2</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>ProcessUniverse</TableName>
+        <SubsetName>Edu Level 2 All Processes</SubsetName>
+        <LayoutName>Edu Level 2 Joining</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+      <Table>
+        <TableName>Producers</TableName>
+        <SubsetName>Producers</SubsetName>
+        <LayoutName>Producers</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <CompareRecords />
+        <UserRecords />
+      </Table>
+    </Tables>
+    <ParameterValues>
+      <ParameterValue>
+        <Name>Material Cost</Name>
+        <Value>10</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Component Mass</Name>
+        <Value>1</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Batch Size</Name>
+        <Value>1000</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Overhead Rate</Name>
+        <Value>110</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Capital Write-off Time</Name>
+        <Value>5</Value>
+      </ParameterValue>
+      <ParameterValue>
+        <Name>Load Factor</Name>
+        <Value>0.5</Value>
+      </ParameterValue>
+    </ParameterValues>
+  </Database>
+  <Stages>
+    <Stage xsi:type="BarStageMemento">
+      <Name>Metals and Alloys</Name>
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,347,573</Windowplacement>
+      <ZOrder>4</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name />
+        <FunctionObjective />
+        <Expression>[MaterialUniverse:\Metals and alloys]</Expression>
+        <ExpressionType>4</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>false</LogAxis>
+        <Low>0</Low>
+        <High>1</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (Pa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>13000000000</Low>
+        <High>380000000000</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Aluminum</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.66711229946524064</XPos>
+          <YPos>45329187022.340279</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6109</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Copper</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.29946524064171121</XPos>
+          <YPos>119798147720.89114</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6106</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>High carbon steel</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.15641711229946523</XPos>
+          <YPos>294418759363.80457</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-2372</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Nickel</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.20721925133689839</XPos>
+          <YPos>162403055067.38922</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6112</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Tin</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.89973262032085566</XPos>
+          <YPos>53867314564.35836</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU08-6145</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Zinc</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.63770053475935828</XPos>
+          <YPos>144972857073.31149</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU05-6119</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Metals and Alloys</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.46122994652406418</XPos>
+          <YPos>384885164042.55219</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.46256684491978611</XPos>
+          <YPos>332826252420.52283</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+    </Stage>
+    <Stage xsi:type="BarStageMemento">
+      <Name>Ceramics and Glasses</Name>
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,823,903</Windowplacement>
+      <ZOrder>5</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name />
+        <FunctionObjective />
+        <Expression>[MaterialUniverse:\Ceramics and glasses]</Expression>
+        <ExpressionType>4</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>false</LogAxis>
+        <Low>0</Low>
+        <High>1</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (Pa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>4000000000</Low>
+        <High>700000000000</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Soda-lime glass</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.58422459893048129</XPos>
+          <YPos>88752222304.712509</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-110</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Ceramics and Glasses</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.48128342245989303</XPos>
+          <YPos>713817142461.563</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.48529411764705882</XPos>
+          <YPos>587600628021.102</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+    </Stage>
+    <Stage xsi:type="BarStageMemento">
+      <Name>Polymers and Elastomers</Name>
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,347,573</Windowplacement>
+      <ZOrder>1</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name />
+        <FunctionObjective />
+        <Expression>[MaterialUniverse:\Polymers and elastomers]</Expression>
+        <ExpressionType>4</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>false</LogAxis>
+        <Low>0</Low>
+        <High>1</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (Pa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>699999.975040555</Low>
+        <High>7199999809.2651367</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Acrylonitrile butadiene styrene (ABS)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>90</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.44297082228116713</XPos>
+          <YPos>583211164.165101</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <RecordGruid>EDU04-7256</RecordGruid>
+          <Bar>0</Bar>
+        </Label>
+        <Label>
+          <Text>Polymers and Elastomers</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.4973474801061008</XPos>
+          <YPos>7739493620.91083</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.506631299734748</XPos>
+          <YPos>5071819115.7676563</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+    </Stage>
+    <Stage xsi:type="BarStageMemento">
+      <Name>Wood and Wood-Like Materials</Name>
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,347,573</Windowplacement>
+      <ZOrder>2</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name />
+        <FunctionObjective />
+        <Expression>[MaterialUniverse:\Hybrids: composites, foams, natural materials\Natural materials\Wood and wood-like materials]</Expression>
+        <ExpressionType>4</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>false</LogAxis>
+        <Low>0</Low>
+        <High>1</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (Pa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>13000000.268220902</Low>
+        <High>27799999237.060547</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Wood and Wood-Like Materials</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.49598930481283421</XPos>
+          <YPos>26900708245.432724</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.49866310160427807</XPos>
+          <YPos>17804778742.241909</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+    </Stage>
+    <Stage xsi:type="BarStageMemento">
+      <Name>Mineralized Tissue</Name>
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,66,347,573</Windowplacement>
+      <ZOrder>3</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowBlackAndWhite>false</ShowBlackAndWhite>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name />
+        <FunctionObjective />
+        <Expression>[MaterialUniverse:\Hybrids: composites, foams, natural materials\Natural materials\Biological\Mineralized tissue]</Expression>
+        <ExpressionType>4</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>false</LogAxis>
+        <Low>0</Low>
+        <High>1</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (Pa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>70000000.298023224</Low>
+        <High>87500000000</High>
+      </yAxis>
+      <Labels>
+        <Label>
+          <Text>Mineralized Tissue</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>180</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.50534759358288772</XPos>
+          <YPos>88184993940.781509</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+        <Label>
+          <Text>Jennifer Wourms</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Tahoma</FaceName>
+          <PointSize>143</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>0.5</XPos>
+          <YPos>66765804229.724152</YPos>
+          <InitialXPos>0</InitialXPos>
+          <InitialYPos>0</InitialYPos>
+          <Bar xsi:nil="true" />
+        </Label>
+      </Labels>
+    </Stage>
+  </Stages>
+</Project>
